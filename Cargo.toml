@@ -1,34 +1,22 @@
 [package]
 name = "barcode"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Tyler Colby"]
 edition = "2021"
-description = "Barcode generator for Precursor — Code 128, Code 39, EAN-13, UPC-A"
+description = "Barcode generator for Precursor: Code 128, Code 39, EAN-13, UPC-A"
+license = "Apache-2.0"
 
+# Lives at xous-core/apps/barcode/ (see xous-dev-toolkit/bin/integrate).
 [dependencies]
-# Core Xous
-xous = "0.9.69"
-xous-ipc = "0.10.9"
 log = "0.4.14"
-log-server = { package = "xous-api-log", version = "0.1.68" }
-xous-names = { package = "xous-api-names", version = "0.9.70" }
-
-# Graphics
-gam = { path = "../../services/gam" }
-
-# Timing
-ticktimer-server = { package = "xous-api-ticktimer", version = "0.9.68" }
-
-# Enum serialization
 num-derive = { version = "0.4.2", default-features = false }
 num-traits = { version = "0.2.14", default-features = false }
-
-# Storage
-pddb = { path = "../../services/pddb" }
-
-# Settings serialization
-serde = { version = "1.0", default-features = false, features = ["derive", "alloc"] }
-serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
+xous = "0.9.71"
+log-server = { package = "xous-api-log", version = "0.1.70" }
+xous-names = { package = "xous-api-names", version = "0.9.72" }
+gam = { path = "../../services/gam" }
+precursor-appkit = { path = "../../libs/precursor-appkit" }
+barcode-core = { path = "core" }
 
 [features]
 default = []

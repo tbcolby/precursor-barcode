@@ -1,0 +1,11 @@
+{
+    "barcode": {
+        "context_name": "Barcode",
+        "menu_name": {
+            "appmenu.barcode": {
+                "en": "Barcode",
+                "en-tts": "Barcode"
+            }
+        }
+    }
+}
