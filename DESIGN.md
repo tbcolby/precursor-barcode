@@ -1,3 +1,5 @@
+> Historical notes from version 0.1. Several claims here (capacity, Code 128 subset A, "full ASCII") were never true of the shipped code; see README.md for current behaviour.
+
 # BARCODE GENERATOR
 ## Design Specification
 
