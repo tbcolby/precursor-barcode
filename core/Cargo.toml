@@ -1,0 +1,13 @@
+[package]
+name = "barcode-core"
+version = "0.2.0"
+edition = "2021"
+description = "Pure logic for Barcode Generator: Code 128, Code 39, EAN-13 and UPC-A encoders plus the saved-code model. No Xous dependencies."
+license = "Apache-2.0"
+
+# Keep this crate free of xous/gam/pddb so `cargo test` runs on any machine.
+[dependencies]
+serde = { version = "1.0", default-features = false, features = ["derive", "alloc"] }
+
+[dev-dependencies]
+serde_json = "1.0"
